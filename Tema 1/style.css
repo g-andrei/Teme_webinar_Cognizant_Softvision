@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-color: #CFCFCF;
+}
+
+.first_paragraph {
+    color: #D01111;
+    text-align: center;
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.my_favorite_color {
+    text-align: center;
+    font-size: 30px;
+}
+
+.my_color {
+    color: #4C0A8E;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.my_first_canvas {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 600px;
+    width: 400px;
+    border: 1px solid black;
+}
