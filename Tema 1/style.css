@@ -27,5 +27,29 @@ body {
     display: block;
     height: 600px;
     width: 400px;
-    border: 1px solid black;
+    border: 1px solid #000000;
+}
+
+.my_favorite_animal {
+    height: auto;
+    max-width: 402px;
+    max-height: 402px;
+    margin: 25px auto 20px auto;
+    display: block;
+}
+
+.footer {
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D38A00;
 }
