@@ -5,4 +5,18 @@ body {
 
 h1 {
     text-align: center;
+    margin-bottom: 5px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.gameArea {
+    border: 1px solid #000000;
+    margin: 0 auto 0 auto;
+    width: 600px;
+    height: 400px;
+    display: block;
 }
