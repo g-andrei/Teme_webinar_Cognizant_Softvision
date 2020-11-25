@@ -1,30 +1,55 @@
-// let iLoveJs = ['Love', 'I', 'JavaScript'];
+import { Car } from './car.js'
 
-// let x = iLoveJs.splice(1, 1);
-// iLoveJs.unshift(x[0]);
-// console.log(iLoveJs);
+//  ############## EX 1  ##############
+
+console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EXERCITIUL 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
+
+let iLoveJs = ['Love', 'I', 'JavaScript'];
+
+console.log(`Array initial ${iLoveJs} !`);
+
+let x = iLoveJs.splice(1, 1);
+iLoveJs.unshift(x[0]);
+
+console.log(`Array dupa modificare ${iLoveJs} !`);
+
+//  ############## EX 2  ##############
+
+console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EXERCITIUL 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
+
+let anotherArray = ['Paul', 
+                    1, 
+                    false, 
+                    {name: 'Jon Snow'}, 
+                    [1, 2, 3], 
+                    null, 
+                    undefined, 
+                    function() { 
+                        console.log('Test');
+                    },
+];
 
 
-// let anotherArray = ['Paul', 
-//                     1, 
-//                     false, 
-//                     {name: 'Jon Snow'}, 
-//                     [1, 2, 3], 
-//                     null, 
-//                     undefined, 
-//                     function() { 
-//                         console.log('Test');
-//                     },
-// ];
+for(let i = 0; i < anotherArray.length; i++) {
+    console.log(`Pozitia: ${i}, 
+valoarea: ${anotherArray[i]},
+tipul: ${typeof anotherArray[i]}.
+
+`);
+}
 
 
-// for(let i = 0; i < anotherArray.length; i++) {
-//     console.log(`Pozitia: ${i}, 
-// valoarea: ${anotherArray[i]},
-// tipul: ${typeof anotherArray[i]}.
+//  ############## EX 7  ##############
 
-// `);
-// }
+console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EXERCITIUL 7 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
+
+const myFord = new Car('Ford', 6, true, 'red', 'black');
+
+myFord.canWork();
+myFord.canHonk();
+myFord.colorOfCar();
+
+// ############## GEORGE AND MARIO #############
 
 
 const canvas = document.getElementById('canvasId');
@@ -65,9 +90,10 @@ mario.onload = () => {
 }
 
 document.addEventListener("keydown", function(event) {
+
     context.clearRect(0, 0, 600, 400);
 
-    //  ############## CONDITIE DE MISCARE PENTRU GEORGE 
+    //  ############## CONDITIE DE MISCARE PENTRU GEORGE ##############
 
     if (event.key === 'ArrowUp' && georgeY >= 0) {
         georgeY -= 10;
@@ -136,4 +162,7 @@ document.addEventListener("keydown", function(event) {
         context.drawImage(mario, 0 * MARIO_WIDTH, 0 * MARIO_HEIGHT, MARIO_WIDTH, MARIO_HEIGHT, marioX, marioY, MARIO_WIDTH, MARIO_HEIGHT);
     }
     
+    context.fillStyle = "green";
+    context.fillRect(560, 385, 30, 10);
+
 });
